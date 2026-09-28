@@ -1,0 +1,33 @@
+.shell {
+  min-height: 100vh;
+  padding-bottom: calc(var(--worker-nav-height) + 12px);
+}
+
+.top {
+  min-height: var(--topbar-height);
+  background: var(--color-chrome);
+  color: var(--color-chrome-text);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  padding: 0.5rem var(--space-md);
+}
+
+.name {
+  margin: 0;
+  flex: 1;
+  font-weight: 600;
+}
+
+.main {
+  padding: var(--space-md);
+}
+
+@media (min-width: 768px) {
+  .main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: var(--space-xl);
+  }
+}

@@ -1,0 +1,42 @@
+.fs {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 0.75rem;
+  margin: 0 0 var(--space-md);
+}
+
+.fs legend {
+  font-weight: 600;
+  font-size: var(--font-size-sm);
+}
+
+.fs label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 40px;
+}
+
+.list {
+  list-style: none;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.list p {
+  margin: 0.2rem 0 0.4rem;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}

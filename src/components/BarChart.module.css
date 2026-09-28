@@ -1,0 +1,36 @@
+.chart {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.chart li {
+  display: grid;
+  grid-template-columns: 110px 1fr 32px;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.track {
+  height: 12px;
+  background: var(--color-bg);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  border-radius: var(--radius-full);
+  background: var(--color-primary);
+}
+
+.value {
+  font-weight: 700;
+  font-size: var(--font-size-sm);
+}

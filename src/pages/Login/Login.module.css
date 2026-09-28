@@ -1,0 +1,94 @@
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: var(--space-md);
+  background:
+    radial-gradient(circle at top right, rgba(202, 138, 4, 0.18), transparent 40%),
+    var(--color-bg);
+}
+
+.card {
+  width: min(460px, 100%);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-xl);
+}
+
+.lead {
+  color: var(--color-text-muted);
+  margin: 0.4rem 0 var(--space-lg);
+}
+
+.tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.4rem;
+  background: var(--color-bg);
+  padding: 0.3rem;
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-lg);
+}
+
+.tab {
+  min-height: var(--tap-min);
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tabOn {
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+.pass {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.pass input {
+  flex: 1;
+  min-height: var(--tap-min);
+  padding: 0.7rem 0.85rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.pass button {
+  min-height: var(--tap-min);
+  min-width: 72px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.banner {
+  color: var(--color-danger);
+  background: var(--color-danger-bg);
+  padding: 0.7rem 0.85rem;
+  border-radius: var(--radius-md);
+}
+
+.demo {
+  margin-top: var(--space-lg);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.demo h2 {
+  font-size: var(--font-size-md);
+  color: var(--color-text);
+}
+
+.demo ul {
+  padding-left: 1.1rem;
+}

@@ -1,0 +1,29 @@
+.nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 30;
+  height: var(--worker-nav-height);
+  background: var(--color-chrome);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 0.25rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #f4f4f5;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  min-height: 56px;
+}
+
+.active {
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+}

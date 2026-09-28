@@ -1,0 +1,36 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: grid;
+  place-items: center;
+  padding: var(--space-md);
+}
+
+.backdrop {
+  position: absolute;
+  inset: 0;
+  border: 0;
+  background: rgba(24, 24, 27, 0.72);
+  cursor: default;
+}
+
+.dialog {
+  position: relative;
+  width: min(640px, 100%);
+  max-height: min(92vh, 900px);
+  overflow: auto;
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  box-shadow: var(--shadow-lg);
+}
+
+.title {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--space-lg);
+}
+
+.footer {
+  margin-top: var(--space-lg);
+}

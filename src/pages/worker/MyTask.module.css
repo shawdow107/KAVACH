@@ -1,0 +1,42 @@
+.head {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.head h2 {
+  margin: 0;
+  font-size: var(--font-size-xl);
+}
+
+.dl {
+  display: grid;
+  gap: 0.75rem;
+  margin: var(--space-md) 0;
+}
+
+.dl dt {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.dl dd {
+  margin: 0;
+  font-weight: 600;
+}
+
+.list {
+  padding-left: 1.2rem;
+}
+
+.null {
+  font-family: ui-monospace, monospace;
+  font-weight: 700;
+}
+
+.actions {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: var(--space-lg);
+}

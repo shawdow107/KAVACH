@@ -1,0 +1,33 @@
+.wrap {
+  display: grid;
+  place-items: center;
+}
+
+.track,
+.bar {
+  fill: none;
+  stroke-width: 12;
+  transform: rotate(-90deg);
+  transform-origin: 70px 70px;
+}
+
+.track {
+  stroke: var(--color-border);
+}
+
+.bar {
+  stroke: var(--color-success);
+  stroke-linecap: round;
+  transition: stroke-dashoffset 400ms ease;
+}
+
+.value {
+  font-size: 22px;
+  font-weight: 700;
+  fill: var(--color-text);
+}
+
+.caption {
+  font-size: 11px;
+  fill: var(--color-text-muted);
+}
